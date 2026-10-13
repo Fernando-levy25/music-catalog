@@ -18,5 +18,43 @@
         </div>
     </header>
     
+
+    <main class="flex-grow max-w-6xl w-full mx-auto p-4 md:p-6 space-y-6">
+
+        <section class="bg-gray-800  p-4 md:p-6 rounded-lg shadow-lg" aria-label="Filtros e Pesquisa">
+            <form id="search-form" class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+
+                <div class="md:col-span-6 flex flex-col">
+                    <label for="search-input" class="text-sm font-medium mb-1 text-gray-300">
+                        Pesquisar por título ou artista:
+                    </label>
+                    <input 
+                    type="text"
+                    id="search-input"
+                    placeholder="Ex: Queen, Bohemian Rhapsody..."
+                    required
+                    class="px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-white placeholder-gray-400"
+                 >
+                </div>
+
+                <div class="md:col-span-4 flex felx-col">
+                    <label for="sort-select" class="text-sm font-medium mb-1 text-gray-300">
+                        Ordenar resultados por:
+                    </label>
+                    <select
+                     id="sort-select"
+                     class="px-4 py-2 bg-gray-700 border border-gray-600 rounded-mb focuoutline-none focus:ring-2 focus:ring-indigo-500 text-white"
+                    >
+                     <option value="default">Padrão de busca</option>
+                     <option value="title">Título (A-Z)</option>
+                     <option value="artist">Artista (A-Z)</option>
+                     <option value="date">Data de Lançamento (Mais recentes)</option>
+                    </select>
+                </div>
+
+                
+            </form>
+        </section>
+    </main>
 </body>
 </html>
