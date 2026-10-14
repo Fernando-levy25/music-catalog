@@ -1,4 +1,3 @@
-// Formata a duração em milissegundos para o formato 'mm:ss' (RF05)
 export function formatDuration(ms) {
   if (!ms || isNaN(ms)) return 'Não informada';
   const totalSeconds = Math.floor(ms / 1000);
