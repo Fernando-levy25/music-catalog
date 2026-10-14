@@ -20,3 +20,10 @@ iTunes Search API: https://developer.apple.com/library/archive/documentation/Aud
  
 HTML5 semântico, Tailwind CSS (via CDN), CSS puro, JavaScript (ES modules) e `fetch`.
  
+## Como executar
+
+O projeto usa módulos JavaScript, então não funciona abrindo o `index.html` com duplo clique. É preciso um servidor local, e também de internet (Tailwind e API são carregados da web).
+
+1. Clone o repositório: `git clone https://github.com/Fernando-levy25/music-catalog.git`
+2. Abra a pasta no VS Code e instale a extensão **Live Server**.
+3. Clique com o botão direito em `index.html` e escolha **Open with Live Server**.
