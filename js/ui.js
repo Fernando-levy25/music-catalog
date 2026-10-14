@@ -5,7 +5,6 @@ const statusMessage = document.getElementById('status-message');
 const modal = document.getElementById('detail-modal');
 const modalContent = document.getElementById('modal-content');
 
-// Exibe mensagem de feedback (Carregamento, Erro ou Sem Resultados)
 export function showStatus(message, type = 'info') {
   statusMessage.classList.remove('hidden', 'bg-blue-900/50', 'text-blue-200', 'bg-red-900/50', 'text-red-200', 'bg-yellow-900/50', 'text-yellow-200');
   
@@ -24,12 +23,10 @@ export function hideStatus() {
   statusMessage.classList.add('hidden');
 }
 
-// Limpa a grelha de resultados
 export function clearResults() {
   resultsGrid.innerHTML = '';
 }
 
-// Ordena a lista de faixas (RF04)
 export function sortTracks(tracks, sortBy) {
   const sorted = [...tracks];
   if (sortBy === 'title') {
@@ -42,7 +39,6 @@ export function sortTracks(tracks, sortBy) {
   return sorted;
 }
 
-// Renderiza a lista de resultados (RF02)
 export function renderResults(tracks, onSelectTrack) {
   clearResults();
 
@@ -85,7 +81,6 @@ export function renderResults(tracks, onSelectTrack) {
   });
 }
 
-// Abre o modal de detalhamento (RF03)
 export function openModal(track) {
   const coverUrl = track.artworkUrl100 ? track.artworkUrl100.replace('100x100bb', '600x600bb') : PLACEHOLDER_IMAGE;
 
